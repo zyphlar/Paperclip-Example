@@ -1,8 +1,0 @@
-== PAPERCLIP EXAMPLE
-This is just a sample app created by following the simple example at http://wiki.github.com/thoughtbot/paperclip/usage
-
-The main difference is that I was unable to get form_for :user working and so changed it to form_for @user instead. I also added a second attachment, :pic1, to test multiple uploads.
-
-My hope is that this will make it easier for anyone having trouble using Paperclip, so that they can easily clone this public repository and attempt to run it in order to test whether or not Paperclip is working for them. Obviously the normal installation procedure at http://wiki.github.com/thoughtbot/paperclip/installation applies here -- namely making sure ImageMagick is installed and possibly (not sure) running the rake:install and rake:unpack commands.
-
-If you're a noob and notice something potentially wrong here, or lacking, just let me know. I'm a noob too.
