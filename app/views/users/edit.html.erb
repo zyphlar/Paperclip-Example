@@ -1,0 +1,26 @@
+<h1>Editing user</h1>
+
+<% form_for @user, :html => { :multipart => true } do |form| %>
+  <%= form.error_messages %>
+
+  <% if @user.avatar.exists? then %>
+    <%= image_tag @user.avatar.url(:thumb) %>
+  <% end %>
+    <%= form.file_field :avatar %>
+
+  <% if @user.pic1.exists? then %>
+    <%= image_tag @user.pic1.url(:thumb) %>
+  <% end %>
+    <%= form.file_field :pic1 %>
+
+  <p>
+    <%= form.label :name %><br />
+    <%= form.text_field :name %>
+  </p>
+  <p>
+    <%= form.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @user %> |
+<%= link_to 'Back', users_path %>

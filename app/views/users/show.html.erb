@@ -1,0 +1,12 @@
+
+<%= image_tag @user.avatar.url(:thumb) %>
+<%= image_tag @user.pic1.url(:thumb) %>
+
+<p>
+  <b>Name:</b>
+  <%=h @user.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
